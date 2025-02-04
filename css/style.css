@@ -1,0 +1,151 @@
+.whatsapp{
+	position:fixed;
+	width:45px;
+	height:45px;
+	bottom:40px;
+    left: 10px;
+	 right:20px; 
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:20px;
+	text-align:center;
+  font-size:25px;
+	box-shadow: 2px 2px 4px #999;
+  z-index:100;
+}
+
+.whatsappicon{
+	margin-top:11px;
+}
+
+.phone {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 100px;
+    left: 10px;
+    background-color: #0000fd;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+.phoneicon
+{
+    padding-top: 12px;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	background-color:#f8f8f8;
+	overflow-x: hidden;
+}
+
+*
+{
+padding: 0;
+margin: 0;
+font-family: sans-serif;
+box-sizing: border-box;
+}
+.nav_tag
+{
+padding:10px 20px;
+height:80px;
+width:100%;
+background: white;
+color:black;
+font-weight: 700;
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: relative;
+}
+/* .logo_div{
+    padding-left: 10px;
+} */
+.nav_items{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+}
+.nav_items .nav_main_ul li
+{
+    display: inline;
+}
+.nav_items .nav_main_ul li a
+{
+text-decoration: none;
+color:black;
+}
+.baar_icon_div{
+    padding-right: 10px;
+    display: none;
+}
+.baar_icon_div:hover{
+    cursor: pointer;
+}
+/* .footer_nav{
+    padding-top: 10px;
+} */
+
+/* responsive start here */
+@media (max-width:768px)
+{
+    nav ul{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        flex-direction: column;   /*convert in to row to colum of navbar*/
+        text-align: center;
+        background: whitesmoke;
+        gap:0;
+        overflow:hidden;
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    .baar_icon_div{
+        display: inline;
+    }
+    #nav_main_ul
+    {
+        transition:all 0.8s;
+    }
+}
+@media (max-width:500px)
+{
+/* nav_enquiry_button start */
+.enquiry_now_class
+{
+display: none;
+}
+/* nav_enquiry_button end */
+}
+/* who we are heading */
+.heading
+{
+font-size: 35px;
+} 
+.about_content .heading::before
+{
+content: "";
+width: 2px;
+height: 1.5em;
+background-color: black;
+position: relative;
+display: inline-block;
+left: -10px;
+top:5px;
+z-index: 1;
+}
+
+/* responsive end here  */

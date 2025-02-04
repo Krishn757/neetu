@@ -1,0 +1,149 @@
+/* .social_media_icon{
+    text-align: end;
+}
+@media(max-width:768px){
+    .social_media_icon{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .social_media_contact_us
+    {
+        text-align: center;
+        padding-top: 10px;
+    }
+} */
+ .much_more_icon{
+    /* text-align: center; */
+ }
+ @media(max-width:768px){
+    .much_more_icon{
+        text-align: center;
+    }
+ }
+*{
+    margin: 0;
+    padding: 0;
+}
+/* toggle start here*/
+nav{
+    /* background-color: white; */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.897);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+    height:50px;
+}
+nav a{
+    height:100%;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:#fafafa;
+}
+nav a:hover{
+    text-decoration: underline;
+    transition:color 3s,background 5s;
+    /* color:maroon; */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    line-height: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid black;
+}
+nav li:first-child{
+    /* margin-right: auto; */
+}
+.sidebar{
+    position: fixed;
+    top: 26;
+    right: 0;
+    /* padding-left: 9rem; */
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(50, 39, 39, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgba(9, 2, 2, 0.877);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width:100%;
+}
+.menu-button{
+    display: none;
+    /* background-color: aqua; */
+    
+}
+@media (max-width:800px){
+    .hideOnMobile{
+        display: none;
+                
+    }
+    .menu-button{
+        display: block;
+        margin-right: 20px;
+    }
+}
+@media (max-width:400px){
+    .sidebar{
+        width:100%;
+    }
+} 
+/* toggle end here*/
+
+
+/* background image css start here */
+.desktop_image{
+    display: none;
+}
+.mobile_image{
+    display:block;
+}
+@media(max-width:768px)  
+{
+ .desktop_image{
+    display: block;
+ }   
+ .mobile_image{
+    display: none;
+ }
+}
+/* background image css end here */
+@media (max-width:400px)
+{
+    .center_prperty
+    {
+        display: none;
+        font-size: larger;
+        background: black;
+    }
+}
+.UnderLine_Adjusting{
+    height: 3px;
+    width: 50%;
+    background-color: black;
+    /* border: 2px solid black; */
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+@media (max-width:400px)
+{
+    .responsive_card_for_mobile{
+        margin-left: 40px;
+    }
+}
