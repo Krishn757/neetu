@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="maroon">
+    <title>Enquiry_Now</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/style_nke.css">
+    <!-- css & js link start here------------------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css & js link end here-------------------->
+    <style>
+       .slider-container {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      background: #f8f9fa;
+      border: 2px solid #ccc;
+    }
+
+    .image-track {
+      display: flex;
+      width: max-content;
+      animation: scroll 10s linear infinite;
+    }
+
+    .image-track img {
+      height: 250px;
+      width: auto;
+      margin-right: 20px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+        blur_image{
+            content:'';
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+           opacity: 0.8;
+           z-index: -1;
+           backdrop-filter:blur (10px);
+        }
+        a:hover{
+            background-color: rgb(203, 6, 6);
+        }
+            html,body{ 
+        overflow-x: hidden;
+        /* font-family: ; */
+        /* font-family:"Merriweather", serif; */
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+<!-- social media contact section start here -->
+      <section style="background: rgb(121, 6, 6); color:#ffff;">
+            <div class="row">
+                <div class="col-md-5 much_more_icon"><h2 style=" text-shadow: 0px 7px 5px  black;"><b><a href="#" style="text-decoration: none; color: #ffff;">NEETU KAMANI & ENGINEERING</a></b></h2></div>
+                <div class="col-md-3 much_more_icon mt-2 ">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="" style="text-decoration: none; color:#ffff; "><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>bipinsoni123@gmail.com</span></a>
+                </div>
+                <div class="col-md-4 much_more_icon mt-2">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color:#ffff;text-decoration: none;"><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram"></i></a>
+                    <span class="btn btn-warning fa-beat-fade ms-4"><a href="tel:+91-9451937451" style="color:black; text-decoration: none;"><i class="fa-solid fa-headset pe-2"></i>Enquiry_Now</a></span>
+                </div>
+            </div>
+        </section>
+<!-- social media contact section start here -->
+
+
+        <!-- navbar start here  -->
+         <section style="background:  rgb(121, 6, 6);color: #ffff;">
+        <div class="row">
+                <nav>
+                    <ul class="sidebar">
+                        <li  onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#ffff"><path  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li><a href="home_us.html"><b style="color:#ffff;text-transform: uppercase; font-weight: 900; font-family:serif;">Home</b></a></li>
+                        <li><a href="#"><b style="color:#ffff;text-transform: uppercase; font-weight: 900; font-family:serif;">Gallery</b></a></li>
+                        <li><a href="#"><b style="color:#ffff;text-transform: uppercase; font-weight: 900; font-family:serif;">Packages</b></a></li>
+                        <li><a href="#"><b style="color:#ffff;text-transform: uppercase; font-weight: 900; font-family:serif;">About_us</b></a></li>
+                        <li><a href="contact.html"><b style="color:#ffff;text-transform: uppercase; font-weight: 900; font-family:serif;">Contact_us</b></a></li>
+                    <i class="fa-solid fa-envelope"></i>
+                    </ul>
+                    <ul>
+                        <!-- <li><a href="#">Neetu Kamani & ENGINEERING</a></li> -->
+                        <li class="hideOnMobile"><a href="home_us.html"><b>Home</b></a></li>
+                        <li class="hideOnMobile"><a href="#"><b>Gallery</b></a></li>
+                        <li class="hideOnMobile"><a href="#"><b>Packages</b></a></li>
+                        <li class="hideOnMobile"><a href="about.html"><b>About_Us</b></a></li>
+                        <li class="hideOnMobile"><a href="contact.html"><b>Contact_Us</b></a></li>
+                        <li class="menu-button" onclick=showSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#ffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    </ul>
+                </nav>
+            <!-- </div> -->
+            
+        </div>
+    
+         </section>
+         <!-- navbar end here-->
+    
+
+
+
+
+        <div class="row blur_image">
+            <div class="card">
+                <img src="images/black4.jpg" alt="welding_work"
+                  class="img-fluid"  style="position: relative; object-fit: cover; background-size: cover; background-repeat: no-repeat; height: 550px; width: 100%;">
+                <div class="card-img-overlay" style="display: flex; justify-content:center; align-items: center; margin-bottom: 200px;">
+                    <h2 style="font-family: 'Courier New', Courier, monospace; color:#ffff; font-weight: 600; ">NEETU KAMANI ENGG.</h2>
+                </div>
+                <div class="card-img-overlay" style="display: flex; justify-content:center; align-items: center; margin-bottom:50px ;">
+                    <h2 style="text-align: center; font-family: sans-serif; color:#ffff; font-weight: 900; text-transform: uppercase; font-size:35px;">Mechanical help? Enquire with us.</h2>
+                </div>
+                <div class="card-img-overlay" style="display: flex; justify-content: center; align-items: center; margin-top: 120px;">
+                    <a href="contact.html"  style="text-decoration: NONE; color: #ffff; border: 1px solid white; padding: 10px 50px; border-radius: 8px;">DOMESTIC ENQUIRY Click Here!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+        <div class="row">
+            <div class="text_aos" style="text-align: center;" data-aos="zoom-in">
+        <h2 style="font-family: Proxima Nova; font-weight: bold; font-size: 30px; color: maroon;">W O R L D W I D E P R O D U C T S</h2>
+    <p class="mt-3" style="text-align: center;text-align: justify; color: black; font-size: 18px; font-weight: 200;">Neetu Kamani Engg. provides reliable mechanical products built for strength, durability, and performance. Suitable for industrial use,
+         our products are easy to maintain and install, helping enhance productivity and ensuring smooth operation in various mechanical and
+          engineering applications.</p>
+    </div>
+        </div>
+        </div>
+
+
+
+
+        <!-- slider start here----------------->
+<div class="container mt-4">
+    <div class="slider-container">
+      <div class="image-track">
+        <!-- Repeat images to make scrolling loop smooth -->
+        <img src="images/slider1.jpg" alt="1" style="width: 300px;" class="img-fluid">
+        <img src="images/slider2.jpg" alt="2" style="width: 300px;" class="img-fluid">
+        <img src="images/slider3.jpg" alt="3" style="width: 300px;" class="img-fluid">
+        <img src="images/slider4.jpg" alt="4" style="width: 300px;" class="img-fluid">
+        <img src="images/slider5.jpg" alt="5" style="width: 300px;" class="img-fluid">
+
+        <!-- Repeat for smooth continuous scroll -->
+        <img src="images/slider3.jpg" alt="3" style="width: 300px;" class="img-fluid">
+        <img src="images/slider4.jpg" alt="4" style="width: 300px;" class="img-fluid">
+        <img src="images/slider5.jpg" alt="5" style="width: 300px;" class="img-fluid">
+        </div>
+        </div>
+        </div>
+        <!-- slider end here------------------>
+        
+
+
+        <!-- footer section start here----------------->
+ <footer class="mt-4">
+    <div class="container-fluid" style="background-color:  rgb(121, 6, 6); color: #ffff; text-align: center;">
+        <div class="row py-5">
+            <div class="col-sm-12 col-md-6">
+<h2>Given Us Usefull Links:-</h2><hr>
+<ul style="list-style-type: none; line-height: 2.5;" class="ul_li_a">
+    <li><a href="">Home</a></li>
+    <li><a href="">Gallery</a></li>
+    <li><a href="">About_Us</a></li>
+    <li><a href="">Contact_Us</a></li>
+</ul>
+<p style="font-size: 25px;"><i class="fa-brands fa-facebook" style="color:rgb(226, 237, 6);"></i>&nbsp;&nbsp;
+    <i class="fa-brands fa-instagram" style="color:rgb(197, 6, 235);"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-linkedin-in" style="color:thistle;"></i>
+    &nbsp;&nbsp;<i class="fa-brands fa-twitter" style="color: #067bf0;"></i></p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h2>Contact_Us</h2><hr>
+                <ul style="line-height: 2.5; list-style-type: none;" class="ul_li">
+                    <li>Corporate Shop</li>
+                    <li>For Service</li>
+                    <li>Contact No.:- +91-9451937451</li>
+                     <p>Mail:- bipinsoni123@gmail.com</p>
+                </ul>
+            </div><hr>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                &copy; <span style="font-family: serif;">NEETU KAMANI & ENGINEERING</span> || Designed By
+                 <a href="https://krishnkumarsonicv.netlify.app" style="color: springgreen; text-transform: uppercase; text-decoration: none; font-family: monospace;">krishn kumar soni</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end here----------------->
+</div>
+
+
+
+
+
+    
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+
+<!-- toggle menubar start here---------------------->
+<script>
+    function showSidebar(){
+        const sidebar= document.querySelector('.sidebar')
+        sidebar.style.display='flex'
+    }
+    function hideSidebar()
+    {
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='none'
+    }
+</script>
+<!-- toggle menubar end here---------------------->
+
+</body>
+
+</html>

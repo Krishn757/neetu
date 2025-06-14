@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Refresh CAPTCHA</title>
+    <style>
+        #captcha {
+            font-size: 24px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        #refresh {
+            margin-left: 10px;
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="captcha-container">
+        <span id="captcha">AB12C</span>
+        <span id="refresh">↻ Refresh</span>
+    </div>
+
+    <input type="text" id="userInput" placeholder="Enter CAPTCHA" />
+    <button onclick="validateCaptcha()">Submit</button>
+    <p id="result"></p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Function to generate random CAPTCHA
+        function generateCaptcha() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let captcha = '';
+            for (let i = 0; i < 5; i++) {
+                captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            $('#captcha').text(captcha);
+        }
+
+        // Refresh CAPTCHA on click
+        $('#refresh').click(function() {
+            generateCaptcha();
+            $('#result').text('');
+            $('#userInput').val('');
+        });
+
+        // Validate CAPTCHA input
+        function validateCaptcha() {
+            const userInput = $('#userInput').val();
+            const captcha = $('#captcha').text();
+            if (userInput === captcha) {
+                $('#result').css('color', 'green').text('CAPTCHA correct!');
+            } else {
+                $('#result').css('color', 'red').text('CAPTCHA incorrect. Try again.');
+            }
+        }
+
+        // Generate CAPTCHA on load
+        $(document).ready(function() {
+            generateCaptcha();
+        });
+    </script>
+
+</body>
+</html>
